@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student</title>
+    <link href=assets/style.css type=text/css rel=stylesheet />
+</head>
+<body>
+    <h1>Agregar Estudiante</h1>
+<!-Formulario donde vamos a agregar a los estudiantes usando el metodo POST-->
+    <form action="/addStudent" method="POST">       
+        <label for="nss">NNS</label><br><br>
+        <input type="text" id="nss" name="nss"><br><br>
+
+        <label for="nombre">Nombre</label><br><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="edad">Edad</label><br><br>
+        <input type="text" id="edad" name="edad"><br><br>
+
+        <label for="tipoSangre">Tipo de sangre</label><br><br>
+        <input type="text" id="tipoSangre" name="tipoSangre"><br><br>
+
+        <input type="submit" value="Agregar">
+
+    </form>
+</body>
+</html>

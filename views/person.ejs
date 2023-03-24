@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Person</title>
+    <link href=/assets/style.css type='text/css' rel='stylesheet' />
+</head>
+<body>
+    <h1>Person: <%= ID %></h1>
+    <h1>Message: <%= Message %></h1>
+    <h1>Times: <%= Times %></h1>
+
+    <%
+    switch(Message){
+        case "Hola":
+        %>
+        <ul class="minimal-list">
+            <% for (let i = 0; i < Times; i++) { %>
+                <li><%=Message%> <%=ID%></li>
+                <% } %>
+        </ul><%
+        break;
+        case "Bienvenido":
+        %><ul class="minimal-list">
+            <% for (let i = 0; i < Times; i++) { %>
+                <li><%=Message%> <%=ID%></li>
+                <% } %>
+        </ul>
+    <%
+        break;
+        case "Adios":
+        %><ul class="minimal-list">
+            <% for (let i = 0; i < Times; i++) { %>
+                <li><%=Message%> <%=ID%></li>
+                <% } %>
+        </ul>
+    <%
+        break;
+    }
+%>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.minimal-list {
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .minimal-list li {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    border-bottom: 3px solid #ccc;
+  }
+  
+  .minimal-list li:last-child {
+    border-bottom: none;
+  }
